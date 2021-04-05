@@ -1,7 +1,6 @@
 package blizzard
 
 import (
-	"encoding/json"
 	"fmt"
 
 	"github.com/FuzzyStatic/blizzard/v1/d3gd"

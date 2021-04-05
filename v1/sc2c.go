@@ -1,7 +1,6 @@
 package blizzard
 
 import (
-	"encoding/json"
 	"errors"
 	"fmt"
 

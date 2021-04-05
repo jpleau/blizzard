@@ -2,7 +2,6 @@ package blizzard
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
 
 	"github.com/FuzzyStatic/blizzard/v1/wowgd"

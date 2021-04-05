@@ -3,19 +3,21 @@ package blizzard
 
 import (
 	"context"
-	"encoding/json"
 	"errors"
 	"fmt"
 	"io/ioutil"
 	"net/http"
 	"strings"
 
+	jsoniter "github.com/json-iterator/go"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/clientcredentials"
 )
 
 // For testing
 var c *Client
+
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 // Client regional API URLs, locale, client ID, client secret
 type Client struct {

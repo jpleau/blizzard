@@ -2,11 +2,12 @@ package main
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
 	"os"
+
+	jsoniter "github.com/json-iterator/go"
 
 	"github.com/FuzzyStatic/blizzard/v2"
 	"github.com/FuzzyStatic/blizzard/v2/oauth"
@@ -20,6 +21,8 @@ var (
 	cfg          oauth2.Config
 	blizz        *blizzard.Client
 )
+
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 func homepage(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Homepage Hit!")
